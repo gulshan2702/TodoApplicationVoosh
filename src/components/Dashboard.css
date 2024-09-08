@@ -1,0 +1,200 @@
+/* Container styles */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f8fa;
+  }
+  
+  .dashboard-header {
+    margin-bottom: 20px;
+  }
+  
+  .columns-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .column {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .column h2 {
+    color: #007bff;
+    text-align: center;
+  }
+  
+  .task-card {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+  }
+  
+  .task-card:hover {
+    background-color: #0056b3;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  input, select {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+  }
+  
+  input:focus, select:focus {
+    border-color: #007bff;
+  }
+  
+  /* Modal styling */
+  /* Center the modal */
+.react-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it is on top */
+  }
+  
+  .react-modal-content {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* Adjust width based on your need */
+    max-width: 100%;
+    max-height: 80vh;
+    overflow-y: auto; /* Handle content overflow */
+  }
+  
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .columns-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .column {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  /* Styling for the buttons */
+.task-actions {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .btn-view {
+    background-color: #007bff; /* Blue */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-view-modal {
+    background-color: #248507; /* Blue */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20;
+    margin: 20;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-edit {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effects */
+  .btn-view:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-edit:hover {
+    background-color: #218838;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c82333;
+  }
+  
+  /* Additional styling for buttons */
+  button {
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+  }
+  
+  .task-card {
+    background-color: #a2c1df;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .task-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .column {
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    width: 30%;
+  }
+  
+  
